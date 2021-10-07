@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Dashboard - Ravtel</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-bottom-0 border-end bg-gray-800" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-gray-dark">RAVTEL</div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-3 border-0 active" href="index.html">
+                        <i class="icon fas fa-tachometer-alt me-3"></i> Dashboard
+                    </a>
+                    <span class="list-group-item-dark p-3 my-1 border-0">PREMIER INDEX ALPHA</span>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-3 border-0" href="#">
+                        <i class="icon fas fa-chart-line me-3"></i> Update NAV
+                    </a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-3 border-0" href="#">
+                        <i class="icon fas fa-exchange-alt me-3"></i> Transfers
+                    </a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-3 border-0" href="#">
+                        <i class="icon fas fa-dollar-sign me-3"></i> Fund
+                    </a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-3 border-0" href="#">
+                        <i class="icon fas fa-calendar me-3"></i> Maturity Date
+                    </a>
+                    <span class="list-group-item-dark p-3 my-1 border-0">PERFORMANCE FEE</span>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-3 border-0" href="#">
+                        <i class="icon fas fa-dollar-sign me-3"></i> Subscription
+                    </a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-3 border-0" href="#">
+                        <i class="icon fas fa-dollar-sign me-3"></i> Expected Performance Fee
+                    </a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-3 border-0" href="#">
+                        <i class="icon fas fa-dollar-sign me-3"></i> Actual Performance Fee
+                    </a>
+                    <span class="list-group-item-dark p-3 my-1 border-0">INQUIRY</span>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-3 border-0" href="#">
+                        <i class="icon fas fa-address-book me-3"></i> New Client
+                    </a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-3 border-0" href="#">
+                        <i class="icon fas fa-address-book me-3"></i> Existing Client
+                    </a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+                    <div class="container-fluid mx-2">
+                        <i id="sidebarToggle" class="fas fa-bars pointer text-gray"></i>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item px-3">
+                                <a class="nav-link active" aria-current="page" href="index.html">Dashboard</a>
+                              </li>
+                              <li class="nav-item px-3">
+                                <a class="nav-link" href="#">Users</a>
+                              </li>
+                              <li class="nav-item px-3">
+                                <a class="nav-link" href="#">Partners</a>
+                              </li>
+                            </ul>
+                          </div>
+                    </div>
+                </nav>
+                <!-- Breadcrumb -->
+                <nav class="border-bottom border-top py-3 shadow-sm bg-white" aria-label="breadcrumb">
+                    <div class="container-fluid mx-2">
+                        <ol class="breadcrumb pb-0 mb-0">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-none">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Dahsboard</li>
+                        </ol>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container-fluid mt-2 px-3">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="card bg-purple mt-3">
+                                <div class="card-body text-white p-0">
+                                    <h3 class="mb-1 px-3 pt-3">1,997,876,38</h3>
+                                    <span class="px-3">Balance Fund ($)</span>
+                                    <canvas id="fund" height="100"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="card bg-blue mt-3">
+                                <div class="card-body text-white p-0">
+                                    <h3 class="mb-1 px-3 pt-3">10,651,26</h3>
+                                    <span class="px-3">Balance Unit</span>
+                                    <canvas id="unit" height="100"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="card bg-orange mt-3">
+                                <div class="card-body text-white p-0">
+                                    <h3 class="mb-1 px-3 pt-3">87,57</h3>
+                                    <span class="px-3">Balance Fund</span>
+                                    <canvas id="orange" height="100"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="card bg-red mt-3">
+                                <div class="card-body text-white p-0">
+                                    <h3 class="mb-1 px-3 pt-3">38</h3>
+                                    <span class="px-3">Total Partners</span>
+                                    <canvas id="partners" height="100"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card mt-4">
+                                <div class="card-header bg-white">
+                                  Performance
+                                </div>
+                                <div class="card-body">
+                                    <div>
+                                        <canvas id="performanceChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card mt-4">
+                                <div class="card-header bg-white">
+                                  Transfers
+                                </div>
+                                <div class="card-body">
+                                    <div>
+                                        <canvas id="tranfersChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer id="sticky-footer" class="flex-shrink-0 py-3 mt-4 border-top">
+                    <div class="mx-4">
+                        <span class="text-indigo">RAVTEL</span> &copy; 2021
+                    </div>
+                       
+                </footer>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/2aca8ddfa2.js" crossorigin="anonymous"></script>
+        <!-- Moment JS -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3"></script>
+        <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@0.1.1"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+        <script src="js/chart.js"></script>
+    </body>
+</html>
